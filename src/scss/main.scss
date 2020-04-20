@@ -1,9 +1,12 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 html {
-  box-sizing: border-box;
+  // box-sizing: border-box;
+  width: 100%;
+  
 }
 
 *, *:before, *:after {
@@ -11,6 +14,67 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #3767AD;
 }
+
+.main__app {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+
+  > section {
+
+  }
+}
+.glasswater__icon {
+  position: relative;
+  text-align: center;
+
+}
+
+.glasswater__button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  &--add {
+    border-radius: 4px;
+    color: #000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    width: 216x;
+    height: 47px;
+  }
+  &--remove {
+    color: #F5E5E7;
+    margin-top: 38px;
+    border: none ;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: unset;
+  }
+}
+.glasswater__counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 112px;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+
+  } 

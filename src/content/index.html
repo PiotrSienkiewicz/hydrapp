@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hydrapp</title>
     <meta name="description" content="Description" />
+
 
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -33,7 +34,21 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <div class="main__app">
+      <section>
+      <header class="glasswater__icon">
+       <img src="assets/img/water-glass.svg">
+        <div class="glasswater__counter">
+         0
+        </div>
+      </header>
+      <div class="glasswater__button">
+        <button class="glasswater__button--add glasswater__button--add-js">Dodaj szklankę</button>
+        <button class="glasswater__button--remove  glasswater__button--remove-js">Usuń szklankę</button>
+      </div>
+    </section>
+  </div>
+    
 
     <script src="js/main.js"></script>
   </body>
