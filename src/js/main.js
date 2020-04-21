@@ -17,6 +17,27 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
+const buttonAdd = document.querySelector ('.glasswater__button--add-js')
+const buttonRemove = document.querySelector ('.glasswater__button--remove-js')
+const glasswater__counter = document.querySelector ('.glasswater__counter--js')
+console.log (buttonAdd)
+console.log (buttonRemove)
 
+
+buttonAdd.addEventListener('click', (e) => {
+  const glasswaterCounter = document.querySelector('.glasswater__counter--js');
+  console.log('test', glasswaterCounter);
+  console.dir(glasswaterCounter)
+  glasswaterCounter.innerHTML = parseInt(glasswater__counter.innerHTML) +1;
+})
+
+buttonRemove.addEventListener('click', (e) => {
+  const glasswaterCounter = document.querySelector('.glasswater__counter--js');
+  console.log('test', glasswaterCounter);
+  console.dir(glasswaterCounter)
+  glasswaterCounter.innerHTML = parseInt(glasswater__counter.innerHTML) -1;
+  if (glasswaterCounter.innerHTML < 0 ) {
+    glasswaterCounter.innerHTML = 0
+  }
+})
 
