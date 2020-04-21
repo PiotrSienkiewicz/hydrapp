@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hydrapp</title>
+    <meta name="description" content="Description" />
+
+
+    <!-- Title -->
+    <meta property="og:title" content="" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="" />
+    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+    <meta property="og:url" content="https://piotrsienkiewicz.github.io/hydrapp/" />
+    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://piotrsienkiewicz.github.io/hydrapp/assets/img/cover.png" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="main__app">
+      <section>
+      <header class="glasswater__icon">
+       <img src="assets/img/water-glass.svg">
+        <div class="glasswater__counter glasswater__counter--js">
+         0
+        </div>
+      </header>
+      <div class="glasswater__button">
+        <button class="glasswater__button--add glasswater__button--add-js">Dodaj szklankę</button>
+        <button class="glasswater__button--remove  glasswater__button--remove-js">Usuń szklankę</button>
+      </div>
+    </section>
+  </div>
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
